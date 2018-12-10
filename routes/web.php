@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index', 'IndexController@showIndex');
+//Route::get('index', 'IndexController@showIndex');
 //Route::get('result','PropiedadesController@showPropiedades');
 Route::get('nordelta','NordeltaController@showNordelta');
 Route::get('about','NosotrosController@showNosotros');
@@ -26,7 +26,7 @@ Route::get('api','ApiController@traerApiCompleta');
 Route::get('propiedadesdestacadas','ApiController@propiedadesDestacadas');
 
 
-Route::get('index','ApiController@propiedadesIndex');
+Route::get('costantini/index','ApiController@propiedadesIndex');
 Route::get('propiedades','ApiController@propiedades');
 
 Route::get('result/{pagina}','ApiController@filtrarPropiedades');
